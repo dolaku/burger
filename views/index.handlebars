@@ -2,12 +2,16 @@
     <div class="row">
         <div class="col-12 text-center">
             <i class="fas fa-hamburger mb-3" id="burger-logo"></i>
-            <h1>Burger Muncher!</h1>
+            <h1 class="mb-5">Burger Muncher!</h1>
 
             {{!-- for each burger in burgers table --}}
-            {{#each burgers}}
-                <h3>{{burger_name}}</h3>
-            {{/each}}
+            <div class="my-3">
+                {{#each burgers}}
+                    <h3 data-id="{{id}}" data-devoured="{{devoured}}">
+                        {{id}}. {{burger_name}}
+                    </h3>
+                {{/each}}
+            </div>
 
         </div>
     </div>
