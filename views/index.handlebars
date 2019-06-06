@@ -7,9 +7,10 @@
             {{!-- for each burger in burgers table --}}
             <div class="my-3">
                 {{#each burgers}}
-                    <h3 data-id="{{id}}" data-devoured="{{devoured}}">
-                        {{id}}. {{burger_name}}
-                    </h3>
+                    <div class="d-flex mb-3" data-id="{{id}}" data-devoured="{{devoured}}">
+                        <h3>{{id}}. {{burger_name}}</h3>
+                        <button class="btn btn-remove">Eat it!</button>
+                    </div>
                 {{/each}}
             </div>
 
