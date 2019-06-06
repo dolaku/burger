@@ -3,17 +3,30 @@
         <div class="col-12 text-center">
             <i class="fas fa-hamburger mb-3" id="burger-logo"></i>
             <h1 class="mb-5">Burger Muncher!</h1>
-
-            {{!-- for each burger in burgers table --}}
-            <div class="my-3">
-                {{#each burgers}}
-                    <div class="d-flex mb-3" data-id="{{id}}" data-devoured="{{devoured}}">
-                        <h3>{{id}}. {{burger_name}}</h3>
-                        <button class="btn btn-remove">Eat it!</button>
-                    </div>
-                {{/each}}
-            </div>
-
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-12 text-center">
+            <label class="font-weight-bold" for="input-burger-name">Burger Name:</label>
+            <input type="text" name="input-burger-name" id="input-burger-name">
+            <button class="btn btn-add-new">Add</button>
+        </div>
+    </div>
+</div>
+
+<div class="burger-container d-flex flex-wrap justify-content-center">
+    {{!-- for each burger in burgers table --}}
+    {{#each burgers}}
+        {{!-- if devoured is 0 --}}
+        {{#unless devoured}}
+            <div class="burger-wrapper m-3 d-flex flex-column" data-id="{{id}}" data-devoured="{{devoured}}">
+                <div class="mb-3 d-flex">
+                    <div class="text-id">{{id}}</div>
+                    <div class="text-name">{{burger_name}}</div>
+                </div>
+                <button class="btn btn-remove mx-auto">Eat it!</button>
+            </div>
+        {{/unless}}
+    {{/each}}
 </div>

@@ -38,7 +38,6 @@ let orm = {
     }
 };
 
-console.log('orm connected');
 
 // Export the orm object for the model
 module.exports = orm;
