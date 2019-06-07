@@ -15,6 +15,7 @@ button:focus {
     margin: 0 auto 15px;
     max-width: 350px;
     padding: 8px;
+    text-align: center;
     width: 100%;
 }
 
