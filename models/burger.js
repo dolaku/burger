@@ -10,7 +10,8 @@ let burger = {
     },
     insertOne: (burgerName, cb) => {
         orm.insertOne('burgers', burgerName, (res) => {
-            cb(res);
+            // cb(res);
+            console.log(res);
         });
     },
     updateOne: (table, id, cb) => {

@@ -13,7 +13,7 @@ let orm = {
         });
     },
 
-    insertOne: (table, burgerName) => {
+    insertOne: (table, burgerName, cb) => {
         // INSERT INTO burgers (burger_name, devoured) VALUES (?, ?);
         let queryStr = `INSERT INTO ${table} 
             (burger_name, devoured) 
@@ -26,7 +26,7 @@ let orm = {
         });
     },
     
-    updateOne: (table, id) => {
+    updateOne: (table, id, cb) => {
         // UPDATE burgers SET devoured=1 WHERE id=?;
         let queryStr = `UPDATE ${table} SET devoured=1 WHERE id=?`;
 
