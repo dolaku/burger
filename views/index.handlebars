@@ -15,10 +15,22 @@
     </div>
 </div>
 
-<div class="burger-container d-flex flex-wrap justify-content-center">
+<div class="burger-container d-flex flex-wrap justify-content-center align-items-center">
     {{!-- for each burger in burgers table --}}
     {{#each burgers}}
-        {{!-- if devoured is 0 --}}
+        
+        {{!-- if devoured is 1 == yes --}}
+        {{#if devoured}}
+            <div class="burger-wrapper m-3 d-flex flex-column devoured" data-id="{{id}}" data-devoured="{{devoured}}">
+                <div class="d-flex">
+                    <div class="text-id">{{id}}</div>
+                    <div class="text-name">{{burger_name}}</div>
+                </div>
+                <h5 class="text-center">Yum! <i class="fas fa-grin-tongue"></i></h5>
+            </div>
+        {{/if}}
+        
+        {{!-- if devoured is 0 == no --}}
         {{#unless devoured}}
             <div class="burger-wrapper m-3 d-flex flex-column" data-id="{{id}}" data-devoured="{{devoured}}">
                 <div class="mb-3 d-flex">
@@ -28,5 +40,6 @@
                 <button class="btn btn-remove mx-auto">Eat it!</button>
             </div>
         {{/unless}}
+        
     {{/each}}
 </div>

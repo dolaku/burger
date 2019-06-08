@@ -26,11 +26,34 @@ button:focus {
     text-align: left;
     width: 250px;
 }
+
+.devoured {
+    background-color: #004444;
+    border: double 4px #fff;
+    opacity: .25;
+}
+
+.devoured * {
+    color: #fff !important;
+}
+
+.devoured .text-id {
+    font-size: 3rem;
+}
+
+.devoured .text-name {
+    font-size: 1.25rem;
+}
+
+.devoured .fa-grin-tongue {
+    font-size: 2rem;
+}
+
 .text-id {
     font-size: 3.5rem;
     font-weight: 800;
     line-height: 1;
-    margin-right: 3px;
+    margin-right: 4px;
     position: relative;
     top: -5px;
 }
