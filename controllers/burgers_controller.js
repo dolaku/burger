@@ -22,8 +22,17 @@ router.post('/api/burgers', (req, res) => {
 });
 
 router.put('/api/burgers/:id', (req, res) => {
-    let condition = req.params.id;
-    console.log(condition);
+    let id = req.params.id;
+    console.log('router id: '+ id);
+
+    burger.updateOne(id, (result) => {
+        // if no rows changed == id does not exist == 404 status
+        if (result.changedRows == 0) {
+            return res.status(404).end();
+        } else {
+            res.status(200).end();
+        }
+    });
 });
 
 

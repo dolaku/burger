@@ -71,7 +71,7 @@ button:focus {
 }
 
 /* BUTTONS */
-.btn-remove {
+.btn-eat-it {
     border: solid 1px #004444;
     border-bottom: solid 3px #004444;
     color: #004444;
@@ -84,7 +84,7 @@ button:focus {
     color: #fff;
 }
 
-.btn-remove:hover {
+.btn-eat-it:hover {
     background-color: #004444;
     border-bottom: solid 3px #018181;
     color: #fff;
@@ -96,7 +96,7 @@ button:focus {
     color: #004444;
 }
 
-.btn-remove:active {
+.btn-eat-it:active {
     border-bottom: solid 1px #018181;
     margin-top: 2px;
 }

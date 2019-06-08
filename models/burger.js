@@ -13,7 +13,7 @@ let burger = {
             cb(res);
         });
     },
-    updateOne: (table, id, cb) => {
+    updateOne: (id, cb) => {
         orm.updateOne('burgers', id, (res) => {
             cb(res);
         });
