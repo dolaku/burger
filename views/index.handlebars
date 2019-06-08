@@ -28,10 +28,10 @@
                 </div>
                 <h5 class="text-center">Yum! <i class="fas fa-grin-tongue"></i></h5>
             </div>
-        {{/if}}
+        {{else}}
         
         {{!-- if devoured is 0 == no --}}
-        {{#unless devoured}}
+
             <div class="burger-wrapper m-3 d-flex flex-column" data-id="{{id}}" data-devoured="{{devoured}}">
                 <div class="mb-3 d-flex">
                     <div class="text-id">{{id}}</div>
@@ -39,7 +39,7 @@
                 </div>
                 <button class="btn btn-eat-it mx-auto">Eat it!</button>
             </div>
-        {{/unless}}
+        {{/if}}
         
     {{/each}}
 </div>

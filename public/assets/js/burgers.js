@@ -22,12 +22,9 @@ $(document).ready(() => {
     });
 
 
-    $('.btn-eat-it').on('click', () => {
+    $(document).on('click', '.btn-eat-it', (event) => {
 
-        let id = $(this).parent().data('id');
-
-        alert( $(this).parent().data('id') );
-        console.log('id = ' + id);
+        let id = $(event.target).parent().attr('data-id');
 
         let newDevouredState = {
             devoured: 1
@@ -37,7 +34,7 @@ $(document).ready(() => {
             type: 'PUT',
             data: newDevouredState
         }).then (() => {
-            // location.reload();
+            location.reload();
         });
     });
 
