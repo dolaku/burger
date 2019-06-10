@@ -2,21 +2,21 @@
   "development": {
     "username": "fksxvihwiv0l18xv",
     "password": "ghezaqr2u7nqubm3",
-    "database": "database_development",
+    "database": "nj3p0vyr22b37xgq",
     "host": "ixqxr3ajmyapuwmi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
     "username": "fksxvihwiv0l18xv",
     "password": "ghezaqr2u7nqubm3",
-    "database": "database_test",
+    "database": "nj3p0vyr22b37xgq",
     "host": "ixqxr3ajmyapuwmi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "production": {
     "username": "fksxvihwiv0l18xv",
     "password": "ghezaqr2u7nqubm3",
-    "database": "database_production",
+    "database": "nj3p0vyr22b37xgq",
     "host": "ixqxr3ajmyapuwmi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
